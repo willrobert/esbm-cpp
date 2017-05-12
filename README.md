@@ -1,5 +1,5 @@
 # ESBMC++
-ESBMC is a bounded model checker for embedded ANSI-C software based on SAT Modulo Theories (SMT) solver. It allows the verification engineer (i) to verify single- and multi-threaded software (with shared variables and locks); (ii) to reason about arithmetic under- and overflow, pointer safety, array bounds, atomicity and order violations, deadlock, data race, and user-specified assertions; (iii) to verify programs that make use of bit-level, pointers, structs, unions and fixed-point arithmetic.
+ESBMC++ is a bounded model checker for embedded ANSI-C software based on SAT Modulo Theories (SMT) solver. It allows the verification engineer (i) to verify single- and multi-threaded software (with shared variables and locks); (ii) to reason about arithmetic under- and overflow, pointer safety, array bounds, atomicity and order violations, deadlock, data race, and user-specified assertions; (iii) to verify programs that make use of bit-level, pointers, structs, unions and fixed-point arithmetic.
 
 ## Download
 ESBMC++ for LINUX is avaible on:
