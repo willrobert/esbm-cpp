@@ -1,6 +1,30 @@
 # ESBMC++
 ESBMC++ is a bounded model checker for embedded ANSI-C software based on SAT Modulo Theories (SMT) solver. It allows the verification engineer (i) to verify single- and multi-threaded software (with shared variables and locks); (ii) to reason about arithmetic under- and overflow, pointer safety, array bounds, atomicity and order violations, deadlock, data race, and user-specified assertions; (iii) to verify programs that make use of bit-level, pointers, structs, unions and fixed-point arithmetic.
 
+## Content
+The COM forlder contains the C++ Operational Model (COM) which represents the classes, methods, and other features similar to the actual structure.
+
+#### Running ESBMC++
+
+###### Dependencies
+
+* The user must install the following packages before installation:
+
+```
+sudo apt-get install build-essential libtool
+sudo apt-get install automake
+sudo apt-get install byacc flex
+sudo apt-get install libboost-all-dev
+sudo apt-get install libgmp3-dev
+sudo apt-get install libssl-dev
+sudo apt-get install clang-3.8
+sudo apt-get install clang-3.8-dev
+sudo apt-get install lldb-3.8
+sudo apt-get install bison
+sudo apt-get install gcc-multilib g++-multilib
+sudo apt-get install libc6 libc6-dev
+sudo apt-get install openssl
+```
 ## Download
 ESBMC++ for LINUX is avaible on:
 http://ssvlab.hussama.io/binaries/ecbs2013/esbmc-cpp-linux-64-static.tgz
@@ -30,7 +54,7 @@ http://ssvlab.hussama.io/binaries/ecbs2013/esbmc-cpp-linux-64-static.tgz
 
 ESBMC enables by default the checking of array bounds, division by zero, and pointer safety, which can also be disabled via command line by typing:
 
-`esbmc file_name.c --no-bounds-check`		//check for out-of-bounds array indexing
+`esbmc file_name.c --no-boundssl-check`		//check for out-of-bounds array indexing
 `esbmc file_name.c --no-pointer-check`	//check for NULL-pointer dereferencing
 `esbmc file_name.c --no-div-by-zero-check`	//check for divisions by zero
 
