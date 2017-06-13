@@ -33,7 +33,5 @@
 *.tdo
 *.*~
 *.*backup
+*.pdf
 .DS_Store
-stvrdoc.pdf
-spin2016.pdf
-REPLY.pdf
