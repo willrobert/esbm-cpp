@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // constructing stacks
 #include <iostream>       // std::cout
 #include <stack>          // std::stack
@@ -27,34 +26,4 @@ int main ()
   std::cout << "size of fourth: " << fourth.size() << '\n';
 
   return 0;
-=======
-// constructing stacks
-#include <iostream>       // std::cout
-#include <stack>          // std::stack
-#include <vector>         // std::vector
-#include <deque>          // std::deque
-#include <cassert> // std::cassert
-int main ()
-{
-  std::deque<int> mydeque (3,100);          // deque with 3 elements
-  std::vector<int> myvector (2,200);        // vector with 2 elements
-
-  std::stack<int> first;                    // empty stack
-  std::stack<int> second (mydeque);         // stack initialized to copy of deque
-
-  std::stack<int,std::vector<int> > third;  // empty stack using vector
-  std::stack<int,std::vector<int> > fourth (myvector);
-
-  assert(first.size() == 0);
-  assert(second.size() != 3);
-  assert(third.size() == 0);
-  assert(fourth.size() != 2);
-
-  std::cout << "size of first: " << first.size() << '\n';
-  std::cout << "size of second: " << second.size() << '\n';
-  std::cout << "size of third: " << third.size() << '\n';
-  std::cout << "size of fourth: " << fourth.size() << '\n';
-
-  return 0;
->>>>>>> 323e7fea6048970a9e493a9b9a6c9552bcdd014b
 }
