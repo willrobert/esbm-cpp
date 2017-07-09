@@ -33,6 +33,5 @@
 *.tdo
 *.*~
 *.*backup
-*.pdf
 .DS_Store
-*.cpp
+
