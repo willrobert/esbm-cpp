@@ -15,6 +15,8 @@
 \usepackage{tabularx}
 % longtable does better format for tables that span pages
 \usepackage{longtable}
+\usepackage[normalem]{ulem}
+\usepackage{xcolor}
 
 \begin{document}
 % this is an alternate method of creating a title
@@ -27,22 +29,18 @@
 %\centerline{\Large\bf Lab 1: Security Audit}\par
 %\bigskip
 \author{William Almeida Robert}
-\title{Verification of Models in C ++ 11  Using Formal Methods}
+\title{How to Automatically Detect Bugs\\on Programs based on C++11?}
 \maketitle
 
-\section{Summary}
+Software reliability is an \sout{important concern}~\textcolor{red}{this term is too vague, please, express yourself better} in the modern world~\textcolor{red}{explain in this first phrase why reliability is important in the modern world}. Due to the greater dependence of computer systems, its efficiency and safety are fundamental concerns to avoid accidents and damages in our daily lives~\textcolor{red}{you should merge this phrase to the previous one and give an example of accidents/damages}. In order to achieve the reliability~\textcolor{red}{be careful with powerful statements like that one, are you sure that you wanna to achieve the reliability?} of \sout{these}~\textcolor{red}{C++11} programs,~\textcolor{red}{the beginning of this phrase sounds odd in English, please, re-write it} verification tools demonstrate to be a powerful tool \sout{to test}~\textcolor{red}{verification tools test features?} its features. \sout{For this application}~\textcolor{red}{replace it for another conjunction or a better connector}, we are using the ESBMC++ \sout{software verifier}~\textcolor{red}{stop using ``software verifier'', use ``verification tools'' instead}, developed by researchers from the System and Software Verification Laboratory at the Federal University of Amazonas. 
 
-\begin{center} SOFTWARE VERIFICATION OF C++ PROGRAMS\end{center}
+This tool has an automatic \sout{and efficient} approach to check programs written in C++98\sout{programming language}. \sout{The operation of }ESBMC++ \sout{works on}~\textcolor{red}{applies a technique named bounded} model checking, which \sout{is the process of} exhaustively and automatically checks proprieties of a system according to a given specification. In this case, it is particularly hard to handle C++ programs due to the complex language features, such as inheritance and polymorphism. \sout{To overcome these problems}~\textcolor{red}{the complexity is not the reason why we use OM, please, re-rewrite it}, ESBMC++ uses an operational model, a simplified abstraction of the standard C++ libraries \sout{representing the classes, methods, and other features similar to the actual structure}.
 
-\setlength{\parindent}{10ex} Software reliability is an important concern in the modern world. Due to the greater dependence of computer systems, its efficiency and safety are fundamental concerns to avoid accidents and damages in our daily lives. In order to achieve the reliability of these programs, software verifiers demonstrate to be a powerful tool to test its features. For this application, we are using the ESBMC++ software verifier, developed by the System and Software Verification Lab at the Federal University of Amazonas. \par 
+The main challenge of the verification process is to handle large programs and to support the complex features that the languages has to offer~\textcolor{red}{what about C++11?}. The development of a comprehensive and reliable operational model is important to guarantee the efficiency of the tool \sout{along with the use of satisfiability modulo theories (SMT) to guide the checking process}~\textcolor{red}{How SMT is related to OM?}.
 
-\setlength{\parindent}{10ex}This tool has an automatic and efficient approach to check programs written on C++ programming language.
-	The operation of ESBMC++ works on model checking, which is the process of exhaustively and automatically check proprieties of a system according to a given specification. In this case, it is particularly hard to handle C++ programs due to the complex language features, such as inheritance and polymorphism. To overcome these problems, ESBMC ++ uses an operational model, a simplified abstraction of the standard C++ libraries representing the classes, methods, and other features similar to the actual structure.\par 
-\setlength{\parindent}{10ex}The main challenge of the verification process is to handle large programs and to support the complex features that the languages offers. The development of a comprehensive and reliable operational model is important to guarantee the efficiency of the tool along with the use of satisÔ¨Åability modulo theories (SMT) to guide the checking process.\par 
+The development of the ESBMC++ \sout{was made}~\textcolor{red}{avoid passive voice} from an integration with an already existing model checker, the ESBMC~\textcolor{red}{this phrase is useless}. As results of experiments with most of the features of C++, the tool demonstrated to be able to handle inheritances, polymorphisms and exception handling.~\textcolor{red}{this paragraph does not add anything important to the text, re-write it or remove it}
 
-\setlength{\parindent}{10ex}The development of the ESBMC++ was made from an integration with an already existing model checker, the ESBMC. As results of experiments with most of the features of C++, the tool demonstrated to be able handle inheritances, polymorphisms and exception handling.\par 
-
-\setlength{\parindent}{10ex}The improvement of software verifiers such as ESBMC++ can have a huge impact on software development. Such tools could avoid errors, prevent fails and accidents in industries, transport systems, companies, saving money and people‚Äôs lives. The next step on this research is to give the software verifier the ability to check programs built on newer versions of C++, such as the C++ 11. This version contains new features on the standard library such as ‚Äúarrays‚Äù, ‚Äúforward list‚Äù and other libraries that need to be implemented on ESBMC++ as new operational models.\par 
+The improvement of software verifiers such as ESBMC++ can have a huge impact on software development. Such tools could avoid errors, prevent failures and accidents in industries, transport systems, companies, saving money and peopleÄôs lives~\textcolor{red}{You didn't explain why is important and this phrase is not appropriate}. The next step in this research is to give the verification tools~\textcolor{red}{all of them?} the ability to check programs built on \sout{newer versions of C++, such as the} C++11. This version contains new features in the standard library such as arraysÄù, forward list and other libraries that need to be implemented on ESBMC++ as new operational models~\textcolor{red}{you need to re-write this phrase}.
 
 
 \section{Activities}
